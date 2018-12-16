@@ -1,0 +1,41 @@
+<div class="container">
+  <h3 class="text-center">Cart Items</h3>
+  <div class="row text-center mt-4" *ngIf="cartItems.cartCount > 0">
+    <div class="col-6 border-all font-weight-bold">
+      Name
+    </div>
+    <div class="col-2 border-all font-weight-bold">
+      Item Price
+    </div>
+    <div class="col-2 border-all font-weight-bold">
+      Number of Items
+    </div>
+    <div class="col-2 border-all font-weight-bold">
+      Total Price
+    </div>
+  </div>
+  <ng-container *ngFor="let cart of cartItems.items">
+    <div class="row" *ngIf="cart.cartCount > 0">
+      <div class="col-6 text-center border-all">
+        {{cart.name}}
+      </div>
+      <div class="col-2 text-center border-all">
+        {{cart.price}}
+      </div>
+      <div class="col-2 text-center border-all">
+        {{cart.cartCount}}
+      </div>
+      <div class="col-2 text-center border-all">
+        {{(cart.price * cart.cartCount)}}
+      </div>
+    </div>
+  </ng-container>
+  <div class="row" *ngIf="cartItems.cartCount > 0">
+    <div class="col-6 font-weight-bold text-center">Total</div>
+    <div class="col-2"></div>
+    <div class="col-2 text-center">{{cartItems.cartCount}}</div>
+    <div class="col-2 font-weight-bold text-center">{{total}}</div>
+  </div>
+
+  <h3 *ngIf="cartItems.cartCount === 0" class="text-center">No Items in cart</h3>
+</div>
