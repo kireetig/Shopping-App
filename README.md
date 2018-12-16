@@ -1,4 +1,5 @@
-# Zeta
+<<<<<<< HEAD
+# Shopping App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# Shopping-App
+This is just for my learning purpose
+>>>>>>> 8cbd08854c60e5d4bd2d7116ce001e717c050ef9
